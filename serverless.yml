@@ -25,13 +25,6 @@ provider:
   lambdaHashingVersion: 20201221
 
 functions:
-  hi:
-    handler: src/functions/hi.handle
-    events:
-      - http:
-          path: /hi
-          method: GET
-          cors: true
   createTodo:
     handler: src/functions/createTodo.handle
     events:
